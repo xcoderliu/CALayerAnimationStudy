@@ -15,6 +15,9 @@
 		F84D90821D644C3D00AE576B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F84D90801D644C3D00AE576B /* LaunchScreen.storyboard */; };
 		F84D908D1D644C3D00AE576B /* CALayerAnimationStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D908C1D644C3D00AE576B /* CALayerAnimationStudyTests.swift */; };
 		F84D90981D644C3D00AE576B /* CALayerAnimationStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D90971D644C3D00AE576B /* CALayerAnimationStudyUITests.swift */; };
+		F84D90A81D644C5300AE576B /* LZMLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D90A51D644C5300AE576B /* LZMLayer.swift */; };
+		F84D90A91D644C5300AE576B /* LZMLayerEX.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D90A61D644C5300AE576B /* LZMLayerEX.swift */; };
+		F84D90AA1D644C5300AE576B /* UIColor+HexHSB.swift in Sources */ = {isa = PBXBuildFile; fileRef = F84D90A71D644C5300AE576B /* UIColor+HexHSB.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		F84D90931D644C3D00AE576B /* CALayerAnimationStudyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CALayerAnimationStudyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F84D90971D644C3D00AE576B /* CALayerAnimationStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CALayerAnimationStudyUITests.swift; sourceTree = "<group>"; };
 		F84D90991D644C3D00AE576B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F84D90A51D644C5300AE576B /* LZMLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZMLayer.swift; sourceTree = "<group>"; };
+		F84D90A61D644C5300AE576B /* LZMLayerEX.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LZMLayerEX.swift; sourceTree = "<group>"; };
+		F84D90A71D644C5300AE576B /* UIColor+HexHSB.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+HexHSB.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,9 @@
 		F84D90731D644C3D00AE576B /* CALayerAnimationStudy */ = {
 			isa = PBXGroup;
 			children = (
+				F84D90A51D644C5300AE576B /* LZMLayer.swift */,
+				F84D90A61D644C5300AE576B /* LZMLayerEX.swift */,
+				F84D90A71D644C5300AE576B /* UIColor+HexHSB.swift */,
 				F84D90741D644C3D00AE576B /* AppDelegate.swift */,
 				F84D90761D644C3D00AE576B /* ViewController.swift */,
 				F84D90781D644C3D00AE576B /* Main.storyboard */,
@@ -265,9 +274,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F84D90A91D644C5300AE576B /* LZMLayerEX.swift in Sources */,
 				F84D907D1D644C3D00AE576B /* CALayerAnimationStudy.xcdatamodeld in Sources */,
+				F84D90A81D644C5300AE576B /* LZMLayer.swift in Sources */,
 				F84D90771D644C3D00AE576B /* ViewController.swift in Sources */,
 				F84D90751D644C3D00AE576B /* AppDelegate.swift in Sources */,
+				F84D90AA1D644C5300AE576B /* UIColor+HexHSB.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

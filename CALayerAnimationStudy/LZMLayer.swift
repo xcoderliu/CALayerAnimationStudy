@@ -19,10 +19,10 @@ class LZMLayer: CATransformLayer {
         }
     }
     
-    /* Adjust the size later on and the stack will redraw.
+    /* 之后如果调整layer的大小，堆栈将会重新绘制.
      *
-     * The corner radius is calculated to be the result of the width / 4. Assuming the width === height.
-     * Default size is 100x100.
+     * 假设长宽相等，圆角的半径被计算为宽度的四分之一
+     * 默认大小是100X100
      */
     
     var size: CGSize = CGSize(width: 100, height: 100) {

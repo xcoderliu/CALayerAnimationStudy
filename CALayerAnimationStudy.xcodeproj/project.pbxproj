@@ -433,6 +433,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SZ27WN4V96;
 				INFOPLIST_FILE = CALayerAnimationStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoderliu.CALayerAnimationStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -446,6 +447,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = SZ27WN4V96;
 				INFOPLIST_FILE = CALayerAnimationStudy/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = xcoderliu.CALayerAnimationStudy;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -526,6 +528,7 @@
 				F84D909E1D644C3D00AE576B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F84D909F1D644C3D00AE576B /* Build configuration list for PBXNativeTarget "CALayerAnimationStudyTests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +537,7 @@
 				F84D90A11D644C3D00AE576B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F84D90A21D644C3D00AE576B /* Build configuration list for PBXNativeTarget "CALayerAnimationStudyUITests" */ = {
 			isa = XCConfigurationList;
@@ -542,6 +546,7 @@
 				F84D90A41D644C3D00AE576B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

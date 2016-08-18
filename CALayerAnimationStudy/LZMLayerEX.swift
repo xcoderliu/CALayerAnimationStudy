@@ -16,11 +16,13 @@ extension LZMLayer {
         transform.m34 = 1.0 / -500.0
         transform = CATransform3DRotate(transform, CGFloat(M_PI), 0, 0, 1)
         
+        /*动画开始*/
         CATransaction.begin()
         sublayers?.forEach({
             let basic = getSpin(forTransform: transform)
             basic.beginTime = $0.convertTime(CACurrentMediaTime(), to: nil) + offsetTime
             $0.add(basic, forKey: nil)
+            /*按照index更新启动时间*/
             offsetTime += 0.1
         })
         CATransaction.commit()
@@ -30,8 +32,10 @@ extension LZMLayer {
         sublayers?.forEach({ $0.removeAllAnimations() })
     }
     
+    /*创建动画*/
     private func getSpin(forTransform transform: CATransform3D) -> CABasicAnimation {
         let basic = CABasicAnimation(keyPath: "transform")
+        basic.fromValue = NSValue(caTransform3D: CATransform3DIdentity)
         basic.toValue = NSValue(caTransform3D: transform)
         basic.duration = 1.0
         basic.fillMode = kCAFillModeForwards

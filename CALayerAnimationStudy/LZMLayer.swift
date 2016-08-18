@@ -39,21 +39,31 @@ class LZMLayer: CATransformLayer {
         self.init()
         masksToBounds = false
         
+        /* 循环添加子图层 */
+        
         for i in 0..<items {
             let layer = generateLayer(withSize: size, withIndex: i)
             insertSublayer(layer, at: 0)
             setZPosition(ofShape: layer, z: CGFloat(i))
         }
         
+        /*为了颜色是自上而下变得更深*/
+        
         sublayers = sublayers?.reversed()
+        
+        /*居中图层*/
         centerInSuperlayer()
+        
+        /*旋转自身图层3D z轴*/
         rotateParentLayer(toDegree : 60.0)
     }
+    
     
     private func generateLayer(withSize size: CGSize, withIndex index: Int) -> CAShapeLayer {
         let square = CAShapeLayer()
         square.path = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: size.width, height: size.height), cornerRadius: size.width/4).cgPath
         square.frame = square.path!.boundingBox
+        /*设置中心点为描点 同时计算出新的位置*/
         setAnchorPoint(anchorPoint: CGPoint(x: 0.5, y: 0.5), forLayer: square)
         return square
     }
@@ -99,9 +109,7 @@ class LZMLayer: CATransformLayer {
     private func degreesToRadians(degrees: CGFloat) -> CGFloat {
         return ((CGFloat(M_PI) * degrees) / 180.0)
     }
-}
-
-extension LZMLayer {
+    
     private func rotateParentLayer(toDegree degree: CGFloat) {
         var transform = CATransform3DIdentity
         transform.m34 = 1.0 / -500.0
